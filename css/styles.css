@@ -1,1 +1,68 @@
 
+|
+
+
+
+
+
+@media only screen and (max-width: 480px) {
+
+   aside#right {
+      display: none;
+   }
+   
+   article p {
+      font-size: 1.2em;
+      line-height: 1.4em;
+   }
+   
+   /* Telephone and Email Styles */
+      
+   aside#left p a {
+      display: block;
+      width: 220px;
+      margin: 0px auto;
+      background-color: rgb(27, 117, 188);
+      border-radius: 20px;
+      color: white;
+      padding: 10px;
+      font-size: 1.2em;
+      text-decoration: none;
+   }
+}
+
+/* ============================================
+	Tablet and Desktop Devices: 481px or more 
+   ============================================
+*/
+
+@media only screen and (min-width: 481px) {
+
+   /* Navion Style */
+   
+   a#navicon {
+      display: none;
+   }
+   
+   nav#top ul {
+      display: flex;
+      flex-flow: row nowrap;
+      justify-content: center;
+      position: relative;
+   }
+   
+   nav#top ul li {
+      width: 100px;
+   }
+   
+   article p {
+      font-size: 1.2em;
+      line-height: 1.5em;
+   }
+}
+
+@media only screen and (min-width: 681px) {
+   aside#left {
+      order: initial;
+   }
+}
