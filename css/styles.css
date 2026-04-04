@@ -461,6 +461,43 @@ nav ul.submenu > li > a:hover {
   border-radius: 8px; 
 }
 
+.price-table-container {
+  width: 90%;
+  margin: 2em auto;
+  overflow-x: auto;
+  text-align: center;
+}
+
+.pricing-table {
+  width: 100%;
+  border-collapse: collapse;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.pricing-table th,
+.pricing-table td {
+  padding: 1em;
+  border-bottom: 1px solid #cde4e1;
+}
+
+.pricing-table th {
+  background-color: #2e6417;
+  color: #fff;
+}
+
+.pricing-table tr:hover td {
+  background-color: #f4fbf4;
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+  .pricing-table th, .pricing-table td {
+    padding: 0.6em;
+    font-size: 0.9em;
+  }
+}
 
 
 
