@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+   <title>Bishtography</title>
+   <meta charset="utf-8" />
+   <meta name="viewport" content="width=device-width, initial-scale=1" />
+   <link href="css/reset.css" rel="stylesheet" media="all" />
+   <link href="css/styles.css" rel="stylesheet" media="screen" />
+</head>
+
+<body>
+   <div id="wrapper">
+      <header>
+      </header>
+      <nav>
+         <ul class="main-menu">
+            <li>
+               <a href="index.html">Home</a>
+            </li>
+            <li>
+               <a href="portfolio.html">Portfolio</a>
+               <ul class="submenu">
+                  <li><a href="toyphoto.html">Toy Photos</a></li>
+                  <li><a href="environment.html">Outdoor Photos</a></li>
+               </ul>
+            </li>
+            <li>
+               <a href="services.html">Services</a>
+            </li>
+            <li>
+               <a href="pricing.html">Pricing</a>
+            </li>
+            <li>
+               <a href="contact.html">Contact</a>
+               <ul class="submenu">
+                  <li><a href="reservation.html">Reservation</a></li>
+                  <li><a href="feedback.html">Feedback</a></li>
+               </ul>
+            </li>
+         </ul>
+      </nav>
+      <main>
+  <h2>Customer Feedback</h2>
+  <p class="info-needed">We value your opinion. Please share your experience with us.</p>
+
+  <form action="mailto:bishtography@mail.com" method="post" enctype="text/plain">
+    
+    <div class="form-group">
+      <label for="myName">* Name:</label>
+      <input type="text" id="myName" name="myName" required>
+
+      <label for="myEmail">* Email:</label>
+      <input type="email" id="myEmail" name="myEmail" required>
+    </div>
+
+    <div class="form-group">
+      <label for="visit">Date of Visit:</label>
+      <input type="date" id="visit" name="visit">
+
+      <label for="rating">Rating:</label>
+      <select id="rating" name="rating">
+        <option value="5">Excellent</option>
+        <option value="4">Good</option>
+        <option value="3">Average</option>
+        <option value="2">Poor</option>
+        <option value="1">Very Poor</option>
+      </select>
+    </div>
+
+    <label for="comments">Comments:</label>
+    <textarea id="comments" name="comments" rows="6" required></textarea>
+
+    <input type="submit" value="Submit Feedback">
+    <input type="reset" value="Reset">
+  </form>
+
+  
+</main>
+      <footer>
+         <p>&copy; 2026 Bishtography<br>
+            <a href="mailto:bishtography@mail.com">bishtography@mail.com</a>
+         </p>
+      </footer>
+   </div>
+</body>
+
+</html>

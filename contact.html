@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+   <title>Bishtography</title>
+   <meta charset="utf-8" />
+   <meta name="viewport" content="width=device-width, initial-scale=1" />
+   <link href="css/reset.css" rel="stylesheet" media="all" />
+   <link href="css/styles.css" rel="stylesheet" media="screen" />
+</head>
+
+<body>
+   <div id="wrapper">
+      <header>
+      </header>
+      <nav>
+         <ul class="main-menu">
+            <li>
+               <a href="index.html">Home</a>
+            </li>
+            <li>
+               <a href="portfolio.html">Portfolio</a>
+               <ul class="submenu">
+                  <li><a href="toyphoto.html">Toy Photos</a></li>
+                  <li><a href="environment.html">Outdoor Photos</a></li>
+               </ul>
+            </li>
+            <li>
+               <a href="services.html">Services</a>
+            </li>
+            <li>
+               <a href="pricing.html">Pricing</a>
+            </li>
+            <li>
+               <a href="contact.html">Contact</a>
+               <ul class="submenu">
+                  <li><a href="reservation.html">Reservation</a></li>
+                  <li><a href="feedback.html">Feedback</a></li>
+               </ul>
+            </li>
+         </ul>
+      </nav>
+      <main>
+      <h2>Contact Bishtography</h2>
+      <p class="info-needed">Required information is marked with an asterisk (*).</p>
+
+      <form action="mailto:bishtography@mail.com" method="post" enctype="text/plain">
+
+        <label for="fname">* First Name:</label>
+        <input type="text" id="fname" name="First_Name" required>
+
+        <label for="lname">* Last Name:</label>
+        <input type="text" id="lname" name="Last_Name" required>
+
+        <label for="address">* Address:</label>
+        <input type="text" id="address" name="Address" required>
+
+        <label for="city">* City:</label>
+        <input type="text" id="city" name="City" required>
+
+        <label for="state">* State:</label>
+        <input type="text" id="state" name="State" required>
+
+        <label for="zip">* ZIP Code:</label>
+        <input type="text" id="zip" name="ZIP" required>
+
+        <label for="email">* Email:</label>
+        <input type="email" id="email" name="Email" required>
+
+        <label for="phone">Phone:</label>
+        <input type="tel" id="phone" name="Phone">
+
+        <p>Preferred Contact Method:</p>
+        <label class="radio-label">
+          <input type="radio" name="Contact_Method" value="Email" checked> Email
+        </label>
+        <label class="radio-label">
+          <input type="radio" name="Contact_Method" value="Phone"> Phone
+        </label>
+        <label class="radio-label">
+          <input type="radio" name="Contact_Method" value="Mail"> Mail
+        </label>
+        <label class="radio-label">
+          <input type="radio" name="Contact_Method" value="Text"> Text Message
+        </label>
+
+        <label for="reason">Reason for Contact:</label>
+        <select id="reason" name="Reason">
+          <option value="Reservation">Reservation Question</option>
+          <option value="General">General Inquiry</option>
+          <option value="Feedback">Feedback</option>
+          <option value="Other">Other</option>
+        </select>
+
+        <label for="contactDate">Preferred Contact Date:</label>
+        <input type="date" id="contactDate" name="Contact_Date">
+
+        <label for="fileUpload">Upload File:</label>
+        <input type="file" id="fileUpload" name="File">
+
+        <label for="comments">* Comments:</label>
+        <textarea id="comments" name="Comments" rows="8" required></textarea>
+
+        <input type="submit" value="Submit">
+        <input type="reset" value="Reset">
+
+      </form>
+      <footer>
+         <p>&copy; 2026 Bishtography<br>
+            <a href="mailto:bishtography@mail.com">bishtography@mail.com</a>
+         </p>
+      </footer>
+   </div>
+</body>
+
+</html>

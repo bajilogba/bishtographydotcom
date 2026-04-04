@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+   <title>Bishtography</title>
+   <meta charset="utf-8" />
+   <meta name="viewport" content="width=device-width, initial-scale=1" />
+   <link href="css/reset.css" rel="stylesheet" media="all" />
+   <link href="css/styles.css" rel="stylesheet" media="screen" />
+</head>
+
+<body>
+   <div id="wrapper">
+      <header>
+      </header>
+      <nav>
+         <ul class="main-menu">
+            <li>
+               <a href="index.html">Home</a>
+            </li>
+            <li>
+               <a href="portfolio.html">Portfolio</a>
+               <ul class="submenu">
+                  <li><a href="toyphoto.html">Toy Photos</a></li>
+                  <li><a href="environment.html">Outdoor Photos</a></li>
+               </ul>
+            </li>
+            <li>
+               <a href="services.html">Services</a>
+            </li>
+            <li>
+               <a href="pricing.html">Pricing</a>
+            </li>
+            <li>
+               <a href="contact.html">Contact</a>
+               <ul class="submenu">
+                  <li><a href="reservation.html">Reservation</a></li>
+                  <li><a href="feedback.html">Feedback</a></li>
+               </ul>
+            </li>
+         </ul>
+      </nav>
+       <main>
+      <h2>Reservation Form</h2>
+      <p class="info-needed">Please fill out the form below to request a photography session. Required fields are marked with *</p>
+
+      <form action="mailto:bishtography@mail.com" method="post" enctype="text/plain">
+
+        <label for="fname">* First Name:</label>
+        <input type="text" id="fname" name="First_Name" required>
+
+        <label for="lname">* Last Name:</label>
+        <input type="text" id="lname" name="Last_Name" required>
+
+        <label for="email">* Email:</label>
+        <input type="email" id="email" name="Email" required>
+
+        <label for="phone">Phone:</label>
+        <input type="tel" id="phone" name="Phone">
+
+        <label for="sessionDate">Preferred Date:</label>
+        <input type="date" id="sessionDate" name="Session_Date">
+
+        <label for="sessionType">Session Type:</label>
+        <select id="sessionType" name="Session_Type">
+          <option value="Toy_Photos">Toy Photography</option>
+          <option value="Outdoor_Photos">Outdoor Photography</option>
+        </select>
+
+        <label for="hours">Estimated Hours:</label>
+        <input type="number" id="hours" name="Hours" min="1" max="8">
+
+        <label for="fileUpload">Upload Reference Image (optional):</label>
+        <input type="file" id="fileUpload" name="Reference_File" accept=".jpg,.jpeg,.png,.pdf">
+
+        <label for="comments">* Additional Comments:</label>
+        <textarea id="comments" name="Comments" rows="6" required></textarea>
+
+        <input type="submit" value="Submit">
+        <input type="reset" value="Reset">
+
+      </form>
+    </main>
+      <footer>
+         <p>&copy; 2026 Bishtography<br>
+            <a href="mailto:bishtography@mail.com">bishtography@mail.com</a>
+         </p>
+      </footer>
+   </div>
+</body>
+
+</html>
