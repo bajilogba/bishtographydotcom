@@ -3,12 +3,11 @@
 /*
 
    
-   Filename: jb_reset.css
+   Filename: reset.css
 
 */
 
 
-/* Basic styles to be used with all devices and under all conditions */
 
 article, aside, figcaption, figure,
 footer, header, main, nav, section { 
@@ -31,7 +30,7 @@ li, main, nav, nav a, ol, p, section, span, ul {
 }
 
 
-/* Set the default page element styles */
+
 
 body {
    line-height: 1.2em;
@@ -49,5 +48,4 @@ nav ul {
 nav a {
    text-decoration: none;
 }
-
 
