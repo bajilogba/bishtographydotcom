@@ -10,14 +10,16 @@ body {
 /*wrapper */
 #wrapper {
   width: 85%;
+  max-width: 1400px;
+  min-width: 320px;  /* allow small screens */
   margin: 2em auto;
   background-color: #faf9f6;
   border-radius: 12px;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
-  min-width: 960px;
-  max-width: 1400px;
   overflow: hidden;
+  box-sizing: border-box;
 }
+
 /*header */
 header {
   background-color: #2e6417;
@@ -659,6 +661,13 @@ footer a[href^="mailto:"]:hover {
 
   .pricing {
     gap: 0.8em;
+  }
+}
+@media (max-width: 800px) {
+  nav ul.main-menu {
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5em;
   }
 }
 
