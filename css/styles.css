@@ -529,280 +529,86 @@ footer a[href^="mailto:"]:hover {
 
 
 
-/* Media queries for responsiveness */
+/* Media queries for responsiveness - uniform changes per device size */
 
 /* Large screens */
 @media (max-width: 1700px) {
-  header {
-    padding: 18px 8%;
-  }
-
-  header.sticky {
-    padding: 7px 8%;
-  }
-
-  section {
-    padding: 50px 8% 40px;
+  header, header.sticky, section, .home, h1, h2, p,
+  .pricing, .price-card, .service-block {
+    /* padding and sizing adjustments */
+    header { padding: 18px 8%; }
+    header.sticky { padding: 7px 8%; }
+    section { padding: 50px 8% 40px; }
+    .home { height: 95vh; }
+    :root { --h1-font: 5rem; --h2-font: 3rem; --p-font: 16px; }
+    .pricing { gap: 2em; flex-wrap: wrap; justify-content: center; }
+    .price-card { width: 260px; padding: 1.5em; }
+    .service-block { margin: 2em 1.5em; padding: 1.5em; }
+    h2 { font-size: 2em; margin-left: 1em; }
+    .service-block h2 { font-size: 1.9em; }
   }
 }
 
 /* Medium screens */
-@media (max-width: 1400px) {
-  .pricing {
-    gap: 1.8em;
-  }
-
-  .service-block {
-    margin: 1.8em 1.5em;
-  }
-}
-
 @media (max-width: 1200px) {
-  header {
-    padding: 14px 5%;
-  }
-
-  header.sticky {
-    padding: 7px 5%;
-  }
-
-  section {
-    padding: 45px 5% 35px;
-  }
-
-  :root {
-    --h1-font: 4.6rem;
-    --h2-font: 2.8rem;
-    --p-font: 15px;
-  }
-
-  .home {
-    height: 90vh;
-  }
-
-  .pricing {
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 1.5em;
-  }
-
-  .price-card {
-    width: 240px;
-    padding: 1.3em;
-  }
-
-  .service-block {
-    margin: 1.5em 1em;
-    padding: 1.2em;
-  }
-
-  h2 {
-    font-size: 1.9em;
-    margin-left: 1em;
-  }
-
-  .service-block h2 {
-    font-size: 1.8em;
-  }
+  header { padding: 14px 5%; }
+  header.sticky { padding: 7px 5%; }
+  section { padding: 45px 5% 35px; }
+  .home { height: 90vh; }
+  :root { --h1-font: 4.6rem; --h2-font: 2.8rem; --p-font: 15px; }
+  .pricing { gap: 1.5em; flex-direction: row; flex-wrap: wrap; justify-content: center; }
+  .price-card { width: 240px; padding: 1.3em; }
+  .service-block { margin: 1.5em 1em; padding: 1.2em; }
+  h2 { font-size: 1.9em; margin-left: 1em; }
+  .service-block h2 { font-size: 1.8em; }
 }
 
-/* Smaller laptops/tablets */
-@media (max-width: 1050px) {
-  #menu-icon {
-    display: block;
-  }
-
-  .navbar {
-    position: absolute;
-    width: 100%;
-    height: 100vh;
-    padding: 40px 60px;
-    top: 0;
-    left: 100%;
-    display: flex;
-    flex-direction: column;
-    background: var(--bg-color);
-    transition: all 0.5s ease;
-  }
-
-  .navbar a {
-    display: block;
-    color: #979797;
-    margin-bottom: 40px;
-    font-size: 2.2rem;
-    font-weight: 400;
-  }
-
-  .navbar.open {
-    left: 0;
-  }
-
-  .feature-content {
-    gap: 1.5rem;
-  }
-
-  .holiday, .culture {
-    gap: 3rem;
-  }
-}
-
+/* Smaller laptops / tablets */
 @media (max-width: 992px) {
-  .pricing {
-    flex-direction: column;
-    align-items: center;
-    gap: 1em;
-  }
-
-  .price-card {
-    width: 90%;
-    max-width: 300px;
-  }
-
-  .service-block {
-    width: 90%;
-    margin: 1em auto;
-  }
-
-  h2 {
-    font-size: 1.7em;
-    margin-left: 0.5em;
-  }
-
-  .service-block h2 {
-    font-size: 1.6em;
-  }
+  header { padding: 12px 4%; }
+  header.sticky { padding: 7px 4%; }
+  section { padding: 40px 4% 30px; }
+  .home { height: 85vh; }
+  :root { --h1-font: 4rem; --h2-font: 2.5rem; --p-font: 14px; }
+  .pricing { flex-direction: column; align-items: center; gap: 1em; }
+  .price-card { width: 90%; max-width: 300px; padding: 1.2em; }
+  .service-block { width: 90%; margin: 1em auto; padding: 1em; }
+  h2 { font-size: 1.7em; margin-left: 0.5em; }
+  .service-block h2 { font-size: 1.6em; }
 }
 
-/* Tablets */
+/* Tablets / small tablets */
 @media (max-width: 800px) {
-  .holiday, .culture, .newsletter-content {
-    grid-template-columns: 1fr;
-  }
+  header { padding: 10px 3%; }
+  header.sticky { padding: 7px 3%; }
+  section { padding: 35px 3% 25px; }
+  .home { height: 80vh; }
+  :root { --h1-font: 3.8rem; --h2-font: 2.3rem; --p-font: 14px; }
+  .pricing { gap: 0.8em; }
+  .price-card { width: 95%; padding: 1em; }
+  .service-block { margin: 0.8em auto; padding: 1em; }
+  h2 { font-size: 1.5em; margin-left: 0.3em; }
+  .service-block h2 { font-size: 1.4em; }
 
-  .price-card {
-    width: 95%;
-  }
-
-  .service-block {
-    margin: 0.8em auto;
-    padding: 1em;
-  }
-
-  h2 {
-    font-size: 1.5em;
-    margin-left: 0.3em;
-  }
-
-  .service-block h2 {
-    font-size: 1.4em;
-  }
-
-  .pricing {
-    gap: 0.8em;
-  }
-}
-@media (max-width: 800px) {
-  nav ul.main-menu {
-    flex-direction: column;
-    align-items: center;
-    gap: 0.5em;
-  }
-  nav ul.submenu {
-    position: static;
-    box-shadow: none;
-  }
-}
-
-/* Small tablets/phones */
-@media (max-width: 600px) {
-  :root {
-    --h1-font: 3.5rem;
-    --h2-font: 2.1rem;
-  }
-form {
-    width: 95%;
-    padding: 1em;
-  }
-  .home {
-    height: 85vh;
-  }
-  header {
-    height: 100px;
-    background-size: cover;
-  }
-   .info-needed {
-    text-align: center;
-  }
+  nav ul.main-menu { flex-direction: column; align-items: center; gap: 0.5em; }
+  nav ul.submenu { position: static; box-shadow: none; }
 }
 
 /* Small phones */
 @media (max-width: 480px) {
-  h2 {
-    font-size: 1.3em;
-    margin-left: 0.2em;
-  }
-
-  .service-block h2 {
-    font-size: 1.2em;
-  }
-
-  .service-block {
-    padding: 0.9em 0.8em;
-  }
-
-  .price-card {
-    width: 100%;
+  header { padding: 8px 2%; }
+  header.sticky { padding: 7px 2%; }
+  :root { --h1-font: 3.5rem; --h2-font: 2.1rem; --p-font: 13px; }
+  .pricing { gap: 0.5em; }
+  .price-card { width: 100%; padding: 0.9em; }
+  .service-block { margin: 0.5em auto; padding: 0.9em; }
+  h2 { font-size: 1.3em; margin-left: 0.2em; }
+  .service-block h2 { font-size: 1.2em; }
+  form {
+    width: 90%;
+    margin: 0 auto; 
     padding: 1em;
   }
-
-  .pricing {
-    gap: 0.5em;
-  }
-}
-
-/* Extra small phones */
-@media (max-width: 450px) {
-  header {
-    padding: 12px 3%;
-  }
-
-  header.sticky {
-    padding: 7px 3%;
-  }
-
-  section {
-    padding: 60px 3% 50px;
-  }
-}
-
-@media (max-width: 430px) {
-  header {
-    padding: 10px 2%;
-    font-size: 15px;
-  }
-
-  .logo {
-    font-size: 13px;
-    font-weight: 300;
-  }
-
-  .h-right a:first-child {
-    font-size: 0.1rem;
-    margin-left: 5px;
-  }
-
-  .h-right a {
-    font-size: 6px;
-    margin-right: 2px;
-    transition: all 0.5s ease;
-  }
-
-  header.sticky {
-    padding: 7px 2%;
-  }
-
-  section {
-    padding: 60px 2% 50px;
-  }
+  .home, section { text-align: center; }
+  .info-needed { text-align: center; }
 }
