@@ -63,7 +63,8 @@ nav {
   text-shadow: 2px 2px 5px rgba(0,0,0,0.4);
 }
 h2 {
-  margin: 1.5em 0 0.5em 2em;  
+  margin: 1.5em 0 0.5em 0;
+  padding: 0 1em;
   font-size: 2em;
   color: #094b00;  
   text-align: left;  
@@ -302,8 +303,9 @@ main h2 {
 
 form {
   max-width: 700px;
+  width: 90%;
   margin: 1.5em auto;
-  padding: 2em;
+  padding: 1.5em;
   background-color: #f4fbf4;
   border-radius: 12px;
   box-shadow: 0 4px 12px rgba(0,0,0,0.1);
@@ -319,8 +321,8 @@ form h2 {
   color: #094b01;
   font-weight: bold;
   padding-left: 10px;
-  margin: 1.5em 0 0.5em 2em; 
-
+ margin: 1.5em 0 0.5em 0;
+  padding: 0 1em;
 }
 label {
   display: block;
@@ -336,7 +338,7 @@ input, textarea, select {
   border: 1px solid #cde4e1;
   border-radius: 8px;
   font-size: 1em;
-  transition: all 0.25s ease;
+  box-sizing: border-box;
 }
 
 input:focus, textarea:focus, select:focus {
@@ -706,6 +708,10 @@ footer a[href^="mailto:"]:hover {
     align-items: center;
     gap: 0.5em;
   }
+  nav ul.submenu {
+    position: static;
+    box-shadow: none;
+  }
 }
 
 /* Small tablets/phones */
@@ -714,9 +720,19 @@ footer a[href^="mailto:"]:hover {
     --h1-font: 3.5rem;
     --h2-font: 2.1rem;
   }
-
+form {
+    width: 95%;
+    padding: 1em;
+  }
   .home {
     height: 85vh;
+  }
+  header {
+    height: 100px;
+    background-size: cover;
+  }
+   .info-needed {
+    text-align: center;
   }
 }
 
