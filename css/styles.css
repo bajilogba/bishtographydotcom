@@ -316,7 +316,13 @@ form h2 {
   color: #2e6417;
   margin-bottom: 1em;
 }
-
+form input,
+form select,
+form textarea {
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
+}
 .info-needed {
   color: #094b01;
   font-weight: bold;
